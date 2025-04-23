@@ -21,7 +21,7 @@ function App() {
     setLoading(true);
     try {
       const res = await axios.get(
-        `https://your-backend-api.com/search?q=${query}&page=${page}`
+        `https://ca-leginfo-api.vercel.app/search?q=${query}&page=${page}`
       );
       setResults(res.data.results);
     } catch (error) {
